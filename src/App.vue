@@ -18,7 +18,7 @@
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
-          <v-list-tile-content>
+          <v-list-tile-content @click="$router.push(item.path)">
             <v-list-tile-title v-text="item.title"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -29,12 +29,6 @@
       :clipped-left="clipped"
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>remove</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title"></v-toolbar-title>
     </v-toolbar>
     <v-content>
@@ -51,13 +45,18 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
+        icon: 'list',
+        title: 'List',
+        path: '/list'
+      }, {
+        icon: 'content_paste',
+        title: 'Form',
+        path: '/form'
       }],
-      right: true,
+
       title: 'Vuetify.js'
     }
   },

@@ -1,7 +1,7 @@
 {
-  "name": "vuetifyjs-webpack",
+  "name": "vuetifyjs-webpack-feathersjs-template",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "Template using vuetifyjs and feathers",
   "author": "cicko <rudolfcicko2016@gmail.com>",
   "private": true,
   "scripts": {
@@ -14,8 +14,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "feathers": "^2.2.4",
+    "feathers-socketio": "^2.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vuelidate": "^0.6.1",
     "vuetify": "^0.17.6"
   },
   "devDependencies": {

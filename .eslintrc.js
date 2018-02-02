@@ -17,9 +17,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow debugger during development
+    'no-multiple-empty-lines': ['error', { 'max': 1, 'maxBOF': 1 }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   }
 }
