@@ -2,8 +2,6 @@
   <v-app>
     <v-navigation-drawer
       persistent
-      :mini-variant="false"
-      :clipped="clipped"
       v-model="drawer"
       enable-resize-watcher
       fixed
@@ -26,7 +24,6 @@
     </v-navigation-drawer>
     <v-toolbar
       app
-      :clipped-left="clipped"
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
@@ -40,11 +37,16 @@
   </v-app>
 </template>
 
+<style>
+  .toolbar__content {
+    height: 44px !important;
+  }
+</style>
+
 <script>
 export default {
   data () {
     return {
-      clipped: false,
       drawer: false,
       fixed: false,
       items: [{
@@ -57,7 +59,7 @@ export default {
         path: '/form'
       }],
 
-      title: 'Vuetify.js'
+      title: 'Budgi'
     }
   },
   name: 'App'
