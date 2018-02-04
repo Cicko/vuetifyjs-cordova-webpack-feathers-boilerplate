@@ -1,7 +1,7 @@
 # vuetifyjs-onsenui-webpack-feathers template
 
-![](static/images/js-es5-logo.png=250x250)
-![](static/images/Webpack.png=250x250)
+<img src="static/images/js-es5-logo.png" width="200px">
+<img src="static/images/Webpack.png" width="200px">
 ![](static/images/vue-logo.png=250x250)
 ![](static/images/vuetify-logo.png=250x250)
 ![](static/images/onsenui-logo.png=250x250)
