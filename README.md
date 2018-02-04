@@ -1,4 +1,4 @@
-# vuetifyjs-webpack-feathers template
+# vuetifyjs-onsenui-webpack-feathers template
 
 
 
@@ -80,3 +80,4 @@ cordova build ios
 
 - [x] Mobile building
 - [x] Feathers.js 
+- [ ] Prepare some native components through Onsenui
