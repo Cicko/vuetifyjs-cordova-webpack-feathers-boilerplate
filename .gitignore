@@ -16,3 +16,9 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+## Cordova
+www/index.html
+www/static/
+plugins/
+platforms/

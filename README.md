@@ -1,14 +1,14 @@
 # vuetifyjs-onsenui-webpack-feathers template
 
-![](static/images/js-es5-logo.png)
-![](static/images/Webpack.png)
-![](static/images/vue-logo.png)
-![](static/images/vuetify-logo.png)
-![](static/images/onsenui-logo.png)
-![](static/images/cordova-logo.png)
-![](static/images/feathers-logo.svg)
-![](static/images/Mongo-logo.png)
-![](static/images/nodejs-logo.png)
+![](static/images/js-es5-logo.png =250x250)
+![](static/images/Webpack.png =250x250)
+![](static/images/vue-logo.png =250x250)
+![](static/images/vuetify-logo.png =250x250)
+![](static/images/onsenui-logo.png =250x250)
+![](static/images/cordova-logo.png =250x250)
+![](static/images/feathers-logo.svg =250x250)
+![](static/images/Mongo-logo.png =250x250)
+![](static/images/nodejs-logo.png =250x250)
 
 ## Build Setup
 
