@@ -12,7 +12,6 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "build": "node build/build.js",
-    "build_mobile": "npm run build && cp -R dist/* www/"
   },
   "dependencies": {
     "cordova-android": "^7.0.0",
