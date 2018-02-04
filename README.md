@@ -24,10 +24,8 @@ npm run dev
 
 ### Building for production
 ```
-# build for production with minification
+# build for production with minification (also for mobile)
 npm run build
-# build for mobile development through Cordova
-npm run build_mobile
 
 ```
 
@@ -59,15 +57,18 @@ Requirements at project level:
     - [Click here for more info about this file](https://cordova.apache.org/docs/en/latest/config_ref/)
 - There must exist the __www__ folder (can be empty).
 
-##### Steps:
+##### First Steps:
 ```
 # Add your mobile device as platform (ios | android)
 cordova platform add android
-cordova platform add ios  
+cordova platform add ios
+```
+
+##### Further iterative steps
+Every time you make some changes to the application and you want to create updated app you have to follow always these steps:
+```  
 # Build minification files for mobile
-npm run build_mobile
-# There I had a little problem with path. Maybe some configuration in Webpack file may fix it
-# so I had to change the relative paths of CSS and JS files from '/static/...' to 'static/...'
+npm run build
 # Then just execute commando to build the APK
 cordova build android
 cordova build ios
